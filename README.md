@@ -35,9 +35,11 @@ Just replace those with your own values and run the script
 Execution
 ---------
 
-Once configured, just
+Once configured, just launch
 
+```
   php mysql_mem_enginize.php
+```
 
 This will:
 - save a backup copy of your table with a suffix (as configured, defaults to 'BKP' suffix)
