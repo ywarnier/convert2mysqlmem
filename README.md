@@ -20,13 +20,15 @@ Configuration
 
 To run your script, you will first need to update the database access details (you'll have to repeat that if you want to use the test script) at the beginning of the script. By default, it looks like this:
 
-bc. $dbHost = 'localhost';
+```php
+$dbHost = 'localhost';
 $dbPort = '3306';
 $dbUser = 'testmem';
 $dbPass = 'testmem';
 $dbName = 'testmem';
 $backupTableSuffix = 'BKP'; //which suffix to put to the original table, renamed
 $tables = array('testmem1','testmem2'); //names of the tables to pass to MEMORY
+```
 
 Just replace those with your own values and run the script
 
