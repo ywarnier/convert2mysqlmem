@@ -20,7 +20,7 @@ Configuration
 
 To run your script, you will first need to update the database access details (you'll have to repeat that if you want to use the test script) at the beginning of the script. By default, it looks like this:
 
-$dbHost = 'localhost';
+bc. $dbHost = 'localhost';
 $dbPort = '3306';
 $dbUser = 'testmem';
 $dbPass = 'testmem';
