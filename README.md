@@ -46,3 +46,11 @@ This will:
 - update all variable-length fields to fixed-length fields (except TEXT & BLOB)
 - convert the table to MEMORY engine, ready for you to run some stress tests
 
+Roadmap
+-------
+
+One issue at the moment is that the table that has been copied away (as backup) will not be available with its original name when rebooting the server. Somehow this script should implement a mechanism to recover the tables at startup.
+
+One solution would be to ask for some clever SQL command to be executed by the init_file directive of my.cnf, but it is unlikely it would be possible at all (kind of "change engine for all tables ending with $suffix").
+
+Another solution is to run an additional init script on your system (after mysql is started) to check those suffixed tables and see if there is a non-suffixed equivalent, and if there isn't, just remove the suffix... or something like that :-p
